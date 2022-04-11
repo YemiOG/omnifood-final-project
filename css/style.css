@@ -12,9 +12,29 @@ body {
   font-weight: 400;
   color: #555;
 }
+
 /* ****************************** */
 /* GENERAL COMPONENTS */
 /* ****************************** */
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -47,9 +67,32 @@ body {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px white;
 }
+
+.secondary-heading,
+.primary-heading {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.secondary-heading {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.subheading {
+  display: block;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
 /* ****************************** */
 /* HEADER */
 /* ****************************** */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -61,6 +104,7 @@ body {
 .logo {
   height: 2.2rem;
 }
+
 /* ****************************** */
 /* NAVIGATION */
 /* ****************************** */
@@ -97,9 +141,21 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
 }
+
 /* ****************************** */
 /* HERO SECTION */
 /* ****************************** */
+
+.hero {
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 0 3.2rem;
+}
+
 .hero-heading {
   font-size: 5.2rem;
   font-weight: 700;
@@ -113,15 +169,6 @@ body {
   padding: 4.8rem 0 9.6rem 0;
 }
 
-.hero {
-  max-width: 130rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
-  align-items: center;
-  gap: 9.6rem;
-  padding: 0 3.2rem;
-}
 .hero-heading {
   font-size: 5.2rem;
   font-weight: 700;
@@ -146,12 +193,12 @@ body {
   margin-top: 8rem;
 }
 .delivered-meals-txt {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .delivered-meals-txt span {
   color: #cf711f;
-  font-weight: 700;
+  font-weight: 600;
 }
 .delivered-imgs {
   display: flex;
@@ -165,4 +212,31 @@ body {
 }
 .delivered-imgs img:last-child {
   margin: 0;
+}
+
+/* ****************************** */
+/* HOW IT WORKS SECTION */
+/* ****************************** */
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: #fff;
+}
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-img {
+  width: 30%;
+}
+.tertiary-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.step-desc {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
