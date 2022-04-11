@@ -24,7 +24,8 @@ body {
 }
 .grid {
   display: grid;
-  gap: 9.6rem;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
 }
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -34,6 +35,9 @@ body {
 }
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid-center-vert {
+  align-items: center;
 }
 .btn:link,
 .btn:visited {
@@ -228,8 +232,13 @@ body {
   color: #ddd;
   margin-bottom: 1.2rem;
 }
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .step-img {
-  width: 30%;
+  width: 35%;
 }
 .tertiary-heading {
   font-size: 3rem;
