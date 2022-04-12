@@ -117,7 +117,7 @@ body {
   list-style: none;
   display: flex;
   gap: 3.2rem;
-  display: flex;
+
   align-items: center;
 }
 .main-nav-link:link,
@@ -236,9 +236,33 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 60%;
+  border-radius: 50%;
+
+  position: absolute;
+}
+.step-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+}
+.step-img-box::after {
+  width: 50%;
+  padding-bottom: 50%;
+  background-color: #fae5d3;
 }
 .step-img {
   width: 35%;
+  z-index: 1;
 }
 .tertiary-heading {
   font-size: 3rem;
@@ -248,4 +272,60 @@ body {
 .step-desc {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/* ****************************** */
+/* FEATURED IN SECTION */
+/* ****************************** */
+
+.section-featured {
+  padding: 4.8rem 0;
+}
+.heading-featured-in {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.75px;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  color: #888;
+}
+
+/* ****************************** */
+/* MEALS SECTION */
+/* ****************************** */
+
+.section-meals {
+  padding: 9.6rem, 0;
+}
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+}
+.meal-img {
+  width: 100%;
+}
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
 }
