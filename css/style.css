@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -47,7 +47,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 .btn-cta:link,
 .btn-cta:visited {
@@ -307,16 +307,33 @@ body {
   padding: 9.6rem, 0;
   margin-bottom: 100px;
 }
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.meal-content {
+  padding: 4.8rem;
+}
 .tag {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   font-size: 1.2rem;
   text-transform: uppercase;
-  background-color: #51cf66;
+
   color: #333;
   letter-spacing: 1.2;
   border-radius: 100px;
   font-weight: 600;
+}
+.tag-vegan {
+  background-color: #94d82b;
+}
+.tag-paleo {
+  background-color: #ffd43b;
+}
+.tag-vegetarian {
+  background-color: #51cf66;
 }
 .meal-tags {
   margin-bottom: 1.2rem;
@@ -351,11 +368,25 @@ body {
   color: #e67e22;
 }
 
-.meal {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  border-radius: 11px;
-  overflow: hidden;
+.lists {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1.6rem;
 }
-.meal-content {
-  padding: 4.8rem;
+.list-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
