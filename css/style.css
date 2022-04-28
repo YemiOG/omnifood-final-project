@@ -423,15 +423,18 @@ body {
 
 .section-testimonial {
   background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
 }
 .testimonials-container {
-  text-align: center;
   padding: 9.6rem;
 }
 .testimonials {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 9.6rem;
 }
 .testimonial-img {
   width: 6.4rem;
@@ -454,8 +457,49 @@ body {
   gap: 1.6rem;
   padding: 1.6rem;
 }
-
+.gallery-item {
+  overflow: hidden;
+}
 .gallery-item img {
   display: block;
   width: 100%;
+  transition: all 0.4s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* ****************************** */
+/* PRICING SECTION */
+/* ****************************** */
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
