@@ -546,13 +546,19 @@ body {
 /* ****************************** */
 /* FEATURES  */
 /* ****************************** */
-
+.plan-details {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.6;
+}
 .feature-icon {
   color: #e67e22;
   height: 3.2rem;
   width: 3.2rem;
   margin-bottom: 3.2rem;
   background-color: #fdf2e9;
+  padding: 1.6rem;
+  border-radius: 50%;
 }
 .feature-title {
   font-size: 2.4rem;
@@ -563,4 +569,53 @@ body {
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/* ****************************** */
+/* CTA SECTION  */
+/* ****************************** */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  height: 50rem;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.cta-image-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.351),
+      rgba(230, 125, 34, 0.352)
+    ),
+    url(/content/img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .secondary-heading {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.4rem;
+  column-gap: 3.2rem;
 }
