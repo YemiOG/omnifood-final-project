@@ -611,6 +611,7 @@ body {
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.6;
+  margin-bottom: 3.2rem;
 }
 
 .cta-form {
@@ -618,4 +619,16 @@ body {
   grid-template-columns: 1fr 1fr;
   row-gap: 2.4rem;
   column-gap: 3.2rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
 }
