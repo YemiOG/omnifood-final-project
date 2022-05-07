@@ -1,6 +1,6 @@
 ## Final Project
 
-This is a final project as delivered by Jonas Schmedtmann as delivered on Udemy.
+This is a final project as delivered by Jonas Schmedtmann on Udemy.
 
 ## About OmniFood
 
