@@ -226,6 +226,7 @@
   flex-direction: column;
   list-style: none;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 .list-item {
   display: flex;
