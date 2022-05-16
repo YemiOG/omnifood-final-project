@@ -1,3 +1,23 @@
+console.log("Hello World");
+const myName = `'Yemi Ogundeyi`;
+const h1 = document.querySelector(".primary-heading");
+console.log(myName);
+console.log(h1);
+
+// Set current year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
+// Make mobile-nav work
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

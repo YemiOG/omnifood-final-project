@@ -91,6 +91,7 @@
   }
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
   .main-nav {
     background-color: rgba(255, 255, 255, 0.97);
@@ -119,10 +120,11 @@
     visibility: visible;
     transform: translateX(0);
   }
-  .nav-open .icon-mobile-nav [name="close-outline"] {
+  .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
   }
-  .nav-open .icon-mobile-nav [name="menu-outline"] {
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
   .main-nav-list {
@@ -152,10 +154,10 @@
     width: 100%;
   }
   .grid-footer {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
   }
   .logo-col,
-  .adress-col {
+  .address-col {
     grid-column: span 3;
   }
   .nav-col {
